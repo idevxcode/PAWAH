@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8EDE2083195A7146006AAA78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE2082195A7146006AAA78 /* Foundation.framework */; };
+		8EDE2085195A7146006AAA78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE2084195A7146006AAA78 /* CoreGraphics.framework */; };
+		8EDE2087195A7146006AAA78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE2086195A7146006AAA78 /* UIKit.framework */; };
+		8EDE208D195A7146006AAA78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE208B195A7146006AAA78 /* InfoPlist.strings */; };
+		8EDE208F195A7146006AAA78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE208E195A7146006AAA78 /* main.m */; };
+		8EDE2093195A7146006AAA78 /* JDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE2092195A7146006AAA78 /* JDAppDelegate.m */; };
+		8EDE2096195A7146006AAA78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE2094195A7146006AAA78 /* Main.storyboard */; };
+		8EDE2099195A7146006AAA78 /* JDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE2098195A7146006AAA78 /* JDViewController.m */; };
+		8EDE209B195A7146006AAA78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE209A195A7146006AAA78 /* Images.xcassets */; };
+		8EDE20A2195A7146006AAA78 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE20A1195A7146006AAA78 /* XCTest.framework */; };
+		8EDE20A3195A7146006AAA78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE2082195A7146006AAA78 /* Foundation.framework */; };
+		8EDE20A4195A7146006AAA78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE2086195A7146006AAA78 /* UIKit.framework */; };
+		8EDE20AC195A7146006AAA78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EDE20AA195A7146006AAA78 /* InfoPlist.strings */; };
+		8EDE20AE195A7146006AAA78 /* PAWAHTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE20AD195A7146006AAA78 /* PAWAHTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EDE20A5195A7146006AAA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EDE2077195A7146006AAA78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EDE207E195A7146006AAA78;
+			remoteInfo = PAWAH;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8EDE207F195A7146006AAA78 /* PAWAH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAWAH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDE2082195A7146006AAA78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8EDE2084195A7146006AAA78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8EDE2086195A7146006AAA78 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8EDE208A195A7146006AAA78 /* PAWAH-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PAWAH-Info.plist"; sourceTree = "<group>"; };
+		8EDE208C195A7146006AAA78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EDE208E195A7146006AAA78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8EDE2090195A7146006AAA78 /* PAWAH-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PAWAH-Prefix.pch"; sourceTree = "<group>"; };
+		8EDE2091195A7146006AAA78 /* JDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDAppDelegate.h; sourceTree = "<group>"; };
+		8EDE2092195A7146006AAA78 /* JDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDAppDelegate.m; sourceTree = "<group>"; };
+		8EDE2095195A7146006AAA78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EDE2097195A7146006AAA78 /* JDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDViewController.h; sourceTree = "<group>"; };
+		8EDE2098195A7146006AAA78 /* JDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDViewController.m; sourceTree = "<group>"; };
+		8EDE209A195A7146006AAA78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8EDE20A0195A7146006AAA78 /* PAWAHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PAWAHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDE20A1195A7146006AAA78 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8EDE20A9195A7146006AAA78 /* PAWAHTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PAWAHTests-Info.plist"; sourceTree = "<group>"; };
+		8EDE20AB195A7146006AAA78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EDE20AD195A7146006AAA78 /* PAWAHTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAWAHTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EDE207C195A7146006AAA78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EDE2085195A7146006AAA78 /* CoreGraphics.framework in Frameworks */,
+				8EDE2087195A7146006AAA78 /* UIKit.framework in Frameworks */,
+				8EDE2083195A7146006AAA78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EDE209D195A7146006AAA78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EDE20A2195A7146006AAA78 /* XCTest.framework in Frameworks */,
+				8EDE20A4195A7146006AAA78 /* UIKit.framework in Frameworks */,
+				8EDE20A3195A7146006AAA78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EDE2076195A7146006AAA78 = {
+			isa = PBXGroup;
+			children = (
+				8EDE2088195A7146006AAA78 /* PAWAH */,
+				8EDE20A7195A7146006AAA78 /* PAWAHTests */,
+				8EDE2081195A7146006AAA78 /* Frameworks */,
+				8EDE2080195A7146006AAA78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EDE2080195A7146006AAA78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EDE207F195A7146006AAA78 /* PAWAH.app */,
+				8EDE20A0195A7146006AAA78 /* PAWAHTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EDE2081195A7146006AAA78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EDE2082195A7146006AAA78 /* Foundation.framework */,
+				8EDE2084195A7146006AAA78 /* CoreGraphics.framework */,
+				8EDE2086195A7146006AAA78 /* UIKit.framework */,
+				8EDE20A1195A7146006AAA78 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EDE2088195A7146006AAA78 /* PAWAH */ = {
+			isa = PBXGroup;
+			children = (
+				8EDE2091195A7146006AAA78 /* JDAppDelegate.h */,
+				8EDE2092195A7146006AAA78 /* JDAppDelegate.m */,
+				8EDE2094195A7146006AAA78 /* Main.storyboard */,
+				8EDE2097195A7146006AAA78 /* JDViewController.h */,
+				8EDE2098195A7146006AAA78 /* JDViewController.m */,
+				8EDE209A195A7146006AAA78 /* Images.xcassets */,
+				8EDE2089195A7146006AAA78 /* Supporting Files */,
+			);
+			path = PAWAH;
+			sourceTree = "<group>";
+		};
+		8EDE2089195A7146006AAA78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EDE208A195A7146006AAA78 /* PAWAH-Info.plist */,
+				8EDE208B195A7146006AAA78 /* InfoPlist.strings */,
+				8EDE208E195A7146006AAA78 /* main.m */,
+				8EDE2090195A7146006AAA78 /* PAWAH-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EDE20A7195A7146006AAA78 /* PAWAHTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EDE20AD195A7146006AAA78 /* PAWAHTests.m */,
+				8EDE20A8195A7146006AAA78 /* Supporting Files */,
+			);
+			path = PAWAHTests;
+			sourceTree = "<group>";
+		};
+		8EDE20A8195A7146006AAA78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EDE20A9195A7146006AAA78 /* PAWAHTests-Info.plist */,
+				8EDE20AA195A7146006AAA78 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EDE207E195A7146006AAA78 /* PAWAH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EDE20B1195A7146006AAA78 /* Build configuration list for PBXNativeTarget "PAWAH" */;
+			buildPhases = (
+				8EDE207B195A7146006AAA78 /* Sources */,
+				8EDE207C195A7146006AAA78 /* Frameworks */,
+				8EDE207D195A7146006AAA78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PAWAH;
+			productName = PAWAH;
+			productReference = 8EDE207F195A7146006AAA78 /* PAWAH.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EDE209F195A7146006AAA78 /* PAWAHTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EDE20B4195A7146006AAA78 /* Build configuration list for PBXNativeTarget "PAWAHTests" */;
+			buildPhases = (
+				8EDE209C195A7146006AAA78 /* Sources */,
+				8EDE209D195A7146006AAA78 /* Frameworks */,
+				8EDE209E195A7146006AAA78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EDE20A6195A7146006AAA78 /* PBXTargetDependency */,
+			);
+			name = PAWAHTests;
+			productName = PAWAHTests;
+			productReference = 8EDE20A0195A7146006AAA78 /* PAWAHTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EDE2077195A7146006AAA78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = FMA;
+				TargetAttributes = {
+					8EDE209F195A7146006AAA78 = {
+						TestTargetID = 8EDE207E195A7146006AAA78;
+					};
+				};
+			};
+			buildConfigurationList = 8EDE207A195A7146006AAA78 /* Build configuration list for PBXProject "PAWAH" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EDE2076195A7146006AAA78;
+			productRefGroup = 8EDE2080195A7146006AAA78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EDE207E195A7146006AAA78 /* PAWAH */,
+				8EDE209F195A7146006AAA78 /* PAWAHTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EDE207D195A7146006AAA78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EDE209B195A7146006AAA78 /* Images.xcassets in Resources */,
+				8EDE208D195A7146006AAA78 /* InfoPlist.strings in Resources */,
+				8EDE2096195A7146006AAA78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EDE209E195A7146006AAA78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EDE20AC195A7146006AAA78 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EDE207B195A7146006AAA78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EDE2093195A7146006AAA78 /* JDAppDelegate.m in Sources */,
+				8EDE2099195A7146006AAA78 /* JDViewController.m in Sources */,
+				8EDE208F195A7146006AAA78 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EDE209C195A7146006AAA78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EDE20AE195A7146006AAA78 /* PAWAHTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EDE20A6195A7146006AAA78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EDE207E195A7146006AAA78 /* PAWAH */;
+			targetProxy = 8EDE20A5195A7146006AAA78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EDE208B195A7146006AAA78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EDE208C195A7146006AAA78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8EDE2094195A7146006AAA78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EDE2095195A7146006AAA78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EDE20AA195A7146006AAA78 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EDE20AB195A7146006AAA78 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EDE20AF195A7146006AAA78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8EDE20B0195A7146006AAA78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EDE20B2195A7146006AAA78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PAWAH/PAWAH-Prefix.pch";
+				INFOPLIST_FILE = "PAWAH/PAWAH-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8EDE20B3195A7146006AAA78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PAWAH/PAWAH-Prefix.pch";
+				INFOPLIST_FILE = "PAWAH/PAWAH-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8EDE20B5195A7146006AAA78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PAWAH.app/PAWAH";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PAWAH/PAWAH-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PAWAHTests/PAWAHTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8EDE20B6195A7146006AAA78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PAWAH.app/PAWAH";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PAWAH/PAWAH-Prefix.pch";
+				INFOPLIST_FILE = "PAWAHTests/PAWAHTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EDE207A195A7146006AAA78 /* Build configuration list for PBXProject "PAWAH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EDE20AF195A7146006AAA78 /* Debug */,
+				8EDE20B0195A7146006AAA78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EDE20B1195A7146006AAA78 /* Build configuration list for PBXNativeTarget "PAWAH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EDE20B2195A7146006AAA78 /* Debug */,
+				8EDE20B3195A7146006AAA78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8EDE20B4195A7146006AAA78 /* Build configuration list for PBXNativeTarget "PAWAHTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EDE20B5195A7146006AAA78 /* Debug */,
+				8EDE20B6195A7146006AAA78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EDE2077195A7146006AAA78 /* Project object */;
+}
