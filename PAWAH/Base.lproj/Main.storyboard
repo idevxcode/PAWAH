@@ -1,30 +1,1022 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.15" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.9"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="JDViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="640x1136.png" id="Uim-JV-TtV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-10433" y="-9465"/>
+        </scene>
+        <!--TourVC-->
+        <scene sceneID="Hrq-Yo-oDa">
+            <objects>
+                <viewController storyboardIdentifier="Tour" id="CCi-cK-vSF" customClass="TourVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZSJ-5A-xIR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="UZu-nP-gX4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" id="yAj-WU-bw3">
+                                <rect key="frame" x="141" y="64" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.85556149482727051" green="0.44307506084442139" blue="0.13378798961639404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.60402452945709229" green="0.17973504960536957" blue="0.069575302302837372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changePage:" destination="CCi-cK-vSF" eventType="valueChanged" id="gyu-ji-2tD"/>
+                                </connections>
+                            </pageControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_logo.png" id="g5O-QM-caQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qF6-4l-WaP">
+                                <rect key="frame" x="254" y="26" width="46" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="creditos_btn.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCreditos:" destination="CCi-cK-vSF" eventType="touchUpInside" id="IzC-8H-2sF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91623413562774658" green="0.90097141265869141" blue="0.92629551887512207" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="yAj-WU-bw3" id="eWX-f6-MBy"/>
+                        <outlet property="scrollView" destination="UZu-nP-gX4" id="Nls-HM-fty"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mw8-Nk-HNt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9798" y="-9465"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="fEq-xl-xtw">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="SWs-jH-ihD" customClass="HomeVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TwA-C7-Ufx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_logo.png" id="EcF-XI-Ay6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ArQ-EX-J2q">
+                                <rect key="frame" x="114" y="202" width="92" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="home_btn_video.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="captureVideo:" destination="SWs-jH-ihD" eventType="touchUpInside" id="ZLZ-Vk-Ft7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dbl-Zx-ejM">
+                                <rect key="frame" x="103" y="302" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="home_btn_microfono.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recAudio:" destination="SWs-jH-ihD" eventType="touchUpInside" id="3nB-sZ-BVa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dgQ-Cd-Rzk">
+                                <rect key="frame" x="268" y="26" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="menulateral_icono_ajustes.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSettings:" destination="SWs-jH-ihD" eventType="touchUpInside" id="pua-At-Rkz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_inferior.png" id="SlD-7B-gt0">
+                                <rect key="frame" x="0.0" y="510" width="320" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RkF-PY-XLM">
+                                <rect key="frame" x="24" y="518" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="menuinferior_galeria_btn.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showGallery:" destination="SWs-jH-ihD" eventType="touchUpInside" id="mOl-Gp-Hve"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qpw-i4-h1i">
+                                <rect key="frame" x="236" y="518" width="70" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="menuinferior_misderechos_btn.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showRights:" destination="SWs-jH-ihD" eventType="touchUpInside" id="fwF-kF-4H4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lJp-ki-QOq">
+                                <rect key="frame" x="114" y="518" width="93" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="menuinferior_comousarpawah_btn.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showHowUse:" destination="SWs-jH-ihD" eventType="touchUpInside" id="zRX-Ij-yD0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_texto_usatupawah.png" id="FVz-g9-0mn">
+                                <rect key="frame" x="20" y="125" width="280" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea_cafe.png" id="XaH-Hb-RKV">
+                                <rect key="frame" x="0.0" y="115" width="320" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea_cafe.png" id="sH1-8M-v8a">
+                                <rect key="frame" x="0.0" y="149" width="320" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Elf-4G-ZiT">
+                                <rect key="frame" x="75" y="374" width="120" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.85556149482727051" green="0.44307506084442139" blue="0.13378798961639404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnAudio" destination="Dbl-Zx-ejM" id="Wm8-Ve-44Z"/>
+                        <outlet property="btnVideo" destination="ArQ-EX-J2q" id="ZIz-t2-lhO"/>
+                        <outlet property="lblTimerExample4" destination="Elf-4G-ZiT" id="t0X-sB-1ZM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pRV-7v-SGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10434" y="-8812"/>
+        </scene>
+        <!--Como UsarVC-->
+        <scene sceneID="x1X-PW-ott">
+            <objects>
+                <viewController storyboardIdentifier="ComoUsar" id="u7b-fo-ms2" customClass="ComoUsarVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S4v-ci-teN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="3Bw-wI-cl9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" id="Ya1-Iq-lAj">
+                                <rect key="frame" x="140" y="66" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.85556149482727051" green="0.44307506084442139" blue="0.13378798961639404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.60402452945709229" green="0.17973504960536957" blue="0.069575302302837372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changePage:" destination="u7b-fo-ms2" eventType="valueChanged" id="Orz-1p-nOz"/>
+                                </connections>
+                            </pageControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header.png" id="LVk-Dy-t7a">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bNt-zE-Mei">
+                                <rect key="frame" x="254" y="28" width="46" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="creditos_btn.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCreditos:" destination="u7b-fo-ms2" eventType="touchUpInside" id="AmL-qy-d3p"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CÓMO USAR PAWAH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wiC-hi-08B">
+                                <rect key="frame" x="59" y="37" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qgj-8b-hvs">
+                                <rect key="frame" x="20" y="33" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="f_back.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="u7b-fo-ms2" eventType="touchUpInside" id="905-J6-Rzr"/>
+                                    <action selector="exit:" destination="i3n-D7-zsW" eventType="touchUpInside" id="nqm-pS-cF3"/>
+                                    <action selector="exit:" destination="d5F-ld-3gN" eventType="touchUpInside" id="qBU-3m-GV7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="Ya1-Iq-lAj" id="IlD-8j-teP"/>
+                        <outlet property="scrollView" destination="3Bw-wI-cl9" id="MVe-2z-zI4"/>
+                        <outlet property="titulo" destination="wiC-hi-08B" id="mSi-4b-xog"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWA-Vk-Raf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9799" y="-8152"/>
+        </scene>
+        <!--DerechosVC-->
+        <scene sceneID="hoO-AV-gsb">
+            <objects>
+                <viewController storyboardIdentifier="Derechos" id="aDJ-6X-a9f" customClass="DerechosVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4GT-Eb-rnO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header.png" id="p7N-C7-cNn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIS DERECHOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PX5-nw-Yjh">
+                                <rect key="frame" x="59" y="37" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Flv-Vc-bjC">
+                                <rect key="frame" x="20" y="33" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="f_back.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="d5F-ld-3gN" eventType="touchUpInside" id="Guw-gy-vT2"/>
+                                    <action selector="exit:" destination="u7b-fo-ms2" eventType="touchUpInside" id="lIP-eE-eMR"/>
+                                    <action selector="exit:" destination="i3n-D7-zsW" eventType="touchUpInside" id="rgC-oD-rJY"/>
+                                    <action selector="exit:" destination="aDJ-6X-a9f" eventType="touchUpInside" id="tKT-DZ-4nh"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" id="bWc-fo-NAr">
+                                <rect key="frame" x="0.0" y="81" width="320" height="487"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="titulo" destination="PX5-nw-Yjh" id="FoL-V7-rhd"/>
+                        <outlet property="webView" destination="bWc-fo-NAr" id="Ozv-cP-4mH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uGr-MF-LfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9170" y="-8152"/>
+        </scene>
+        <!--Rec VideoVC-->
+        <scene sceneID="cnO-Sv-17n">
+            <objects>
+                <viewController storyboardIdentifier="RecVideo" id="l2U-jj-2qq" customClass="RecVideoVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ve-en-Q6u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modovideo_plecas_superior.png" id="GFI-sZ-QgO">
+                                <rect key="frame" x="0.0" y="20" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modovideo_plecas_inferior.png" id="Oal-d2-KBb">
+                                <rect key="frame" x="0.0" y="431" width="320" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VtO-HJ-ggl">
+                                <rect key="frame" x="260" y="20" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="modofake_btn_07.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CameraToggleButtonPressed:" destination="l2U-jj-2qq" eventType="touchUpInside" id="u4G-c7-Iut"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h0K-Nb-Khc">
+                                <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="home_btn.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitRec:" destination="l2U-jj-2qq" eventType="touchUpInside" id="QZL-6m-7cc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.89999999999999991" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oig-PK-f2V">
+                                <rect key="frame" x="200" y="528" width="120" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DuL-6i-WqT">
+                                <rect key="frame" x="128" y="484" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="modovideo_btn_stop.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartStopButtonPressed:" destination="l2U-jj-2qq" eventType="touchUpInside" id="JgH-nV-a01"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dBS-gn-FwD">
+                                <rect key="frame" x="128" y="484" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="modovideo_btn_grabar_on.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartStopButtonPressed:" destination="l2U-jj-2qq" eventType="touchUpInside" id="WWz-xE-HNy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RuM-s7-fQp">
+                                <rect key="frame" x="20" y="484" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="modocamara_btn_foto_verde.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getPic:" destination="l2U-jj-2qq" eventType="touchUpInside" id="GwF-H9-kHN"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="H9u-j3-xoD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TweetCell" textLabel="fsa-iW-uID" detailTextLabel="ENV-yT-BZ5" style="IBUITableViewCellStyleSubtitle" id="Nwd-sq-W2e">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nwd-sq-W2e" id="Ipb-bi-LEW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fsa-iW-uID">
+                                                    <rect key="frame" x="15" y="4" width="35" height="21.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ENV-yT-BZ5">
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="l2U-jj-2qq" id="DEa-Kq-BTx"/>
+                                    <outlet property="delegate" destination="l2U-jj-2qq" id="fg2-0L-bmC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnHide" destination="VtO-HJ-ggl" id="3qu-Io-S6C"/>
+                        <outlet property="lblTimerExample4" destination="Oig-PK-f2V" id="LT4-iz-Pew"/>
+                        <outlet property="recVideo" destination="dBS-gn-FwD" id="PNt-dc-cy7"/>
+                        <outlet property="stopVideo" destination="DuL-6i-WqT" id="CX3-GU-Spb"/>
+                        <outlet property="tabla" destination="H9u-j3-xoD" id="sWl-dJ-sIt"/>
+                        <outlet property="takePhoto" destination="RuM-s7-fQp" id="QmR-du-Mnc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HKL-Om-SQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9799" y="-8812"/>
+        </scene>
+        <!--GaleriaVC-->
+        <scene sceneID="ioQ-SP-FjZ">
+            <objects>
+                <viewController storyboardIdentifier="Galeria" id="i3n-D7-zsW" customClass="GaleriaVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LUY-dA-QIS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galeria_header.png" id="CYw-3T-PgH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galeria_plecas_videos.png" id="3GL-a8-KBu">
+                                <rect key="frame" x="0.0" y="86" width="320" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galeria_plecas_foto.png" id="Pb0-Tj-Omz">
+                                <rect key="frame" x="0.0" y="247" width="320" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galeria_plecas_audio.png" id="iGd-yY-6Z3">
+                                <rect key="frame" x="0.0" y="408" width="320" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Re2-Be-2Dg">
+                                <rect key="frame" x="20" y="33" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="f_back.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="i3n-D7-zsW" eventType="touchUpInside" id="6rg-ET-VS1"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" id="EMD-W6-6cY">
+                                <rect key="frame" x="0.0" y="218" width="320" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" id="wxS-w9-8Zf">
+                                <rect key="frame" x="0.0" y="379" width="320" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" id="LEW-Cj-9Vb">
+                                <rect key="frame" x="0.0" y="539" width="320" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="contAudios" destination="LEW-Cj-9Vb" id="A0V-8E-I0O"/>
+                        <outlet property="contFotos" destination="wxS-w9-8Zf" id="tru-rF-uP8"/>
+                        <outlet property="contVideos" destination="EMD-W6-6cY" id="SZH-G6-kdh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNh-IY-Pmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8535" y="-8812"/>
+        </scene>
+        <!--VisorVC-->
+        <scene sceneID="6yN-PV-6df">
+            <objects>
+                <viewController storyboardIdentifier="Visor" id="LT9-CA-bhJ" customClass="VisorVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7bb-IQ-kSi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header.png" id="aIG-Vn-NCR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galeria_menu_inferior.png" id="LAq-ua-Rfz">
+                                <rect key="frame" x="0.0" y="481" width="320" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="Kqa-1d-JMG">
+                                <rect key="frame" x="0.0" y="81" width="320" height="392"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UFr-ub-HWr">
+                                <rect key="frame" x="49" y="38" width="251" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="NOMBRE_ARCHIVO.EXT">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FVS-Ww-jLB">
+                                <rect key="frame" x="20" y="510" width="22" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="galeria_btn_subir.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendAlbum:" destination="LT9-CA-bhJ" eventType="touchUpInside" id="vLG-ec-IcZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ork-80-PtF">
+                                <rect key="frame" x="273" y="510" width="27" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="galeria_btn_eliminar.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteID:" destination="LT9-CA-bhJ" eventType="touchUpInside" id="tuU-pv-PI0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jvI-1r-b3H">
+                                <rect key="frame" x="20" y="33" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="f_back.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="LT9-CA-bhJ" eventType="touchUpInside" id="8vK-32-YKh"/>
+                                    <action selector="exit:" destination="i3n-D7-zsW" eventType="touchUpInside" id="hwC-Bc-80P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qTU-h4-SFq">
+                                <rect key="frame" x="128" y="252" width="65" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="reviewdelelemento_btn_play.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playMedia:" destination="LT9-CA-bhJ" eventType="touchUpInside" id="IhK-Do-kWB"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="yJq-Yz-SYX">
+                                <rect key="frame" x="142" y="506" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="cargando" destination="yJq-Yz-SYX" id="C1y-4F-bS7"/>
+                        <outlet property="content" destination="Kqa-1d-JMG" id="qTI-Lb-vvT"/>
+                        <outlet property="file_name" destination="UFr-ub-HWr" id="4Hj-q3-2S6"/>
+                        <outlet property="play_btn" destination="qTU-h4-SFq" id="RFg-KL-Ldu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Tq-tr-WYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7906" y="-8812"/>
+        </scene>
+        <!--Tour6VC-->
+        <scene sceneID="tpU-FQ-87V">
+            <objects>
+                <viewController storyboardIdentifier="Tour6" id="hsW-Hi-Cjf" customClass="Tour6VC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tJI-D6-O89">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAWAH-Tutorial-ModoFake.png" id="d3z-q6-Ahh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yzO-nO-85M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7278" y="-9465"/>
+        </scene>
+        <!--CreditosVC-->
+        <scene sceneID="uB3-0S-iky">
+            <objects>
+                <viewController storyboardIdentifier="Creditos" id="hTY-j7-MMO" customClass="CreditosVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3EQ-Mk-Rws">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header.png" id="fOi-a5-pHb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRÉDITOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="efY-re-L2f">
+                                <rect key="frame" x="59" y="37" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="58B-K9-f4G">
+                                <rect key="frame" x="20" y="33" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="f_back.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="d5F-ld-3gN" eventType="touchUpInside" id="Avy-OW-aAC"/>
+                                    <action selector="exit:" destination="aDJ-6X-a9f" eventType="touchUpInside" id="SXx-YI-C2E"/>
+                                    <action selector="exit:" destination="u7b-fo-ms2" eventType="touchUpInside" id="XA4-BO-0ab"/>
+                                    <action selector="exit:" destination="hTY-j7-MMO" eventType="touchUpInside" id="baw-AL-4y3"/>
+                                    <action selector="exit:" destination="i3n-D7-zsW" eventType="touchUpInside" id="dcf-Kd-5Sc"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" id="ISN-fx-QZp">
+                                <rect key="frame" x="0.0" y="252" width="320" height="415"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAWAH-Creditos-b.png" id="m6c-sZ-N11">
+                                        <rect key="frame" x="0.0" y="334" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAWAH-Creditos-a.png" id="NtP-eI-8Zh">
+                                        <rect key="frame" x="0.0" y="-73" width="320" height="488"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="320" height="990"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="L_FOSFORO.png" id="7cT-fd-ZIk">
+                                <rect key="frame" x="0.0" y="72" width="160" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="L_ADS.png" id="2JH-f6-L8J">
+                                <rect key="frame" x="160" y="72" width="160" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="titulo" destination="efY-re-L2f" id="MaS-sW-iAe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNk-N2-lPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8535" y="-8152"/>
+        </scene>
+        <!--AjustesVC-->
+        <scene sceneID="ekc-Qw-O5c">
+            <objects>
+                <viewController storyboardIdentifier="Ajustes" id="d5F-ld-3gN" customClass="AjustesVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Odp-UH-xGw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajustes_header.png" id="6Dr-Wo-Lxc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kEE-aX-Z4C">
+                                <rect key="frame" x="20" y="33" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="f_back.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="i3n-D7-zsW" eventType="touchUpInside" id="4Km-7o-M17"/>
+                                    <action selector="exit:" destination="d5F-ld-3gN" eventType="touchUpInside" id="coO-qR-ZRb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajustes_plecas__calidaddevideo.png" id="RNP-aC-M5p">
+                                <rect key="frame" x="0.0" y="161" width="320" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajustes_textos_media.png" id="PZh-g6-goR">
+                                <rect key="frame" x="83" y="202" width="45" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajustes_textos_alta.png" id="EX2-kS-hV8">
+                                <rect key="frame" x="193" y="202" width="30" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="H6E-Ue-lCS">
+                                <rect key="frame" x="136" y="200" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.85556149482727051" green="0.44307506084442139" blue="0.13378798961639404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="videoCh:" destination="d5F-ld-3gN" eventType="valueChanged" id="LcL-3J-14n"/>
+                                </connections>
+                            </switch>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajustes_plecas__calidaddeaudio.png" id="Sny-7F-zkH">
+                                <rect key="frame" x="0.0" y="239" width="320" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajustes_textos_media.png" id="zdh-tS-p5Z">
+                                <rect key="frame" x="83" y="283" width="45" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajustes_textos_alta.png" id="sXc-6Q-IuZ">
+                                <rect key="frame" x="193" y="283" width="30" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="Pth-KR-x0G">
+                                <rect key="frame" x="136" y="281" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.85556149482727051" green="0.44307506084442139" blue="0.13378798961639404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="audioCh:" destination="d5F-ld-3gN" eventType="valueChanged" id="96T-F0-XfG"/>
+                                </connections>
+                            </switch>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajustes_plecas__idioma.png" id="Qm2-OC-onL">
+                                <rect key="frame" x="0.0" y="81" width="320" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajustes_textos_english.png" id="dRt-Ed-GeT">
+                                <rect key="frame" x="77" y="124" width="51" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajustes_textos_espanol.png" id="gkU-bD-wNS">
+                                <rect key="frame" x="193" y="124" width="55" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="9ee-8D-cG1">
+                                <rect key="frame" x="136" y="122" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.85556149482727051" green="0.44307506084442139" blue="0.13378798961639404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="idiomaCh:" destination="d5F-ld-3gN" eventType="valueChanged" id="s9Y-9F-hsk"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="swAudio" destination="Pth-KR-x0G" id="Q00-JC-x7h"/>
+                        <outlet property="swIdioma" destination="9ee-8D-cG1" id="y7P-rn-J97"/>
+                        <outlet property="swVideo" destination="H6E-Ue-lCS" id="YF7-IC-uT9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOB-1J-63M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9170" y="-8812"/>
+        </scene>
+        <!--Tour5VC-->
+        <scene sceneID="WeZ-5v-BRA">
+            <objects>
+                <viewController storyboardIdentifier="Tour5" id="asz-vk-Mdb" customClass="Tour5VC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pwy-Gd-aUV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BUk-Zo-zBp">
+                                <rect key="frame" x="33" y="465" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="terminosdeuso_btn_noacepto.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="noAcepto:" destination="asz-vk-Mdb" eventType="touchUpInside" id="ykv-kf-czN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7vY-RR-FPz">
+                                <rect key="frame" x="188" y="465" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="terminosdeuso_btn_acepto.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="siAcepto:" destination="asz-vk-Mdb" eventType="touchUpInside" id="hMH-kH-cVj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TÉRMINOS DE USO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4TA-52-mfV">
+                                <rect key="frame" x="20" y="103" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.60402452945709229" green="0.17973504960536957" blue="0.069575302302837372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea_cafe.png" id="PLF-3p-smF">
+                                <rect key="frame" x="0.0" y="93" width="320" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea_cafe.png" id="Qhk-IL-Esu">
+                                <rect key="frame" x="0.0" y="132" width="320" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plecagris.png" id="g0n-2U-jd0">
+                                <rect key="frame" x="0.0" y="158" width="320" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" id="Klg-H6-FAJ">
+                                <rect key="frame" x="10" y="171" width="300" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">- Consultar y difundir los videos, imágenes y audio generados por los usuarios, a través de una plataforma que facilita su ubicación geográfica y temporal.
+
+- Documentar y denunciar violaciones a derechos humanos en contextos de protesta social, ante organizaciones de la sociedad civil y organismos de protección de derechos humanos
+
+Al usar PAWAH te comprometes a:
+
+- Utilizar PAWAH exclusivamente para la documentación de violaciones a derechos humanos en contextos de protesta social.
+
+- Utilizar PAWAH de manera responsable y con conciencia de que su uso también puede representar un riesgo para ti y para otros.
+
+- Asegurarte de que al usar PAWAH no estás infringiendo ninguna ley vigente en tu país. PAWAH no asume responsabilidad alguna ante cualquier uso indebido de la aplicación.
+
+- Revisar, adherirte y cumplir los Términos y Condiciones de Uso de PAWAH
+
+Al usar PAWAH entiendes que:
+
+-  Al subir videos, imágenes o audio a la plataforma, has liberado el contenido bajo la licencia CCO 1.0 Dedicación de Dominio Público y, por lo tanto, has renunciado a cualquier derecho patrimonial de autor sobre el contenido en todo el mundo, incluyendo todos los derechos conexos y afines, en la medida permitida por la ley. En cualquier caso, al usar PAWAH confieres a cualquier persona el derecho a copiar, modificar, distribuir y hacer comunicación pública de los videos, imágenes o audio generados por ti al usar la aplicación sin la necesidad de pedirte permiso.
+
+- PAWAH está comprometido con proteger la privacidad de los usuarios. Por ello, solamente recaba datos de localización y tiempo de los videos, imágenes y audio subidos a la plataforma a través del uso de PAWAH, sin recabar ningún dato sobre la identidad del usuario. Sin embargo, PAWAH no puede garantizar que tu privacidad no sea comprometida por el propio contenido generado por ti al usar la aplicación.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yku-jc-Yvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6658" y="-8812"/>
+        </scene>
+        <!--Tour4VC-->
+        <scene sceneID="WqE-Q0-cln">
+            <objects>
+                <viewController storyboardIdentifier="Tour4" id="gXN-tR-gbp" customClass="Tour4VC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iqH-fE-Owp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TÉRMINOS DE USO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hIq-4J-Ugo">
+                                <rect key="frame" x="20" y="273" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.60402452945709229" green="0.17973504960536957" blue="0.069575302302837372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terminosdeuso_img_signo.png" id="E9y-Y1-HII">
+                                <rect key="frame" x="120" y="93" width="81" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plecagris.png" id="VPw-hd-92N">
+                                <rect key="frame" x="0.0" y="192" width="320" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Lee esto!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NgL-uH-LA2">
+                                <rect key="frame" x="20" y="192" width="280" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.60402452945709229" green="0.17973504960536957" blue="0.069575302302837372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea_cafe.png" id="tLy-FX-k5u">
+                                <rect key="frame" x="0.0" y="263" width="320" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="linea_cafe.png" id="5Yf-FG-Yoj">
+                                <rect key="frame" x="0.0" y="302" width="320" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plecagris.png" id="reE-4O-JJr">
+                                <rect key="frame" x="0.0" y="320" width="320" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" id="Ufa-H7-fA2">
+                                <rect key="frame" x="10" y="325" width="300" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">La misión de PAWAH es:
+Facilitar y proteger el ejercicio de los derechos a la libertad de expresión, reunión y documentación de violaciones a derechos humanos en contextos de protesta social.
+
+Para ello, PAWAH te permite:
+- Registrar videos, imágenes y audio sobre violaciones a derechos humanos en contextos de protesta social, así como los datos de localización y tiempo de su captura, y subirlos rápida y anónimamente a una base de datos.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYp-pw-zKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6658" y="-9465"/>
+        </scene>
+        <!--Tour1VC-->
+        <scene sceneID="OYe-hJ-Tbe">
+            <objects>
+                <viewController storyboardIdentifier="Tour1" id="vyE-uq-Ncb" customClass="Tour1VC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ERd-RR-3Eo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAWAH-Tutorial-Video.png" id="0pN-CY-Wro">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Egq-4i-41f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9169" y="-9466"/>
+        </scene>
+        <!--Tour2VC-->
+        <scene sceneID="aVh-kH-sPh">
+            <objects>
+                <viewController storyboardIdentifier="Tour2" id="eKl-dn-BbW" customClass="Tour2VC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0kz-0r-iru">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAWAH-Tutorial-Camara.png" id="kfJ-Kc-ONg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6g-DN-qwu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8534" y="-9465"/>
+        </scene>
+        <!--Tour3VC-->
+        <scene sceneID="aii-SV-Xcw">
+            <objects>
+                <viewController storyboardIdentifier="Tour3" id="fU1-jp-RDc" customClass="Tour3VC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GWP-1b-3f3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAWAH-Tutorial-Microfono.png" id="txY-61-5z3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fl4-lE-CAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7906" y="-9465"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
+    <resources>
+        <image name="640x1136.png" width="640" height="1136"/>
+        <image name="L_ADS.png" width="320" height="161"/>
+        <image name="L_FOSFORO.png" width="320" height="161"/>
+        <image name="PAWAH-Creditos-a.png" width="640" height="1136"/>
+        <image name="PAWAH-Creditos-b.png" width="640" height="1136"/>
+        <image name="PAWAH-Tutorial-Camara.png" width="640" height="1136"/>
+        <image name="PAWAH-Tutorial-Microfono.png" width="640" height="1136"/>
+        <image name="PAWAH-Tutorial-ModoFake.png" width="640" height="1136"/>
+        <image name="PAWAH-Tutorial-Video.png" width="640" height="1136"/>
+        <image name="ajustes_header.png" width="640" height="145"/>
+        <image name="ajustes_plecas__calidaddeaudio.png" width="640" height="67"/>
+        <image name="ajustes_plecas__calidaddevideo.png" width="640" height="65"/>
+        <image name="ajustes_plecas__idioma.png" width="640" height="66"/>
+        <image name="ajustes_textos_alta.png" width="59" height="28"/>
+        <image name="ajustes_textos_english.png" width="102" height="32"/>
+        <image name="ajustes_textos_espanol.png" width="111" height="32"/>
+        <image name="ajustes_textos_media.png" width="90" height="26"/>
+        <image name="creditos_btn.png" width="151" height="133"/>
+        <image name="f_back.png" width="128" height="128"/>
+        <image name="galeria_btn_eliminar.png" width="55" height="67"/>
+        <image name="galeria_btn_subir.png" width="35" height="50"/>
+        <image name="galeria_header.png" width="640" height="145"/>
+        <image name="galeria_menu_inferior.png" width="639" height="173"/>
+        <image name="galeria_plecas_audio.png" width="640" height="64"/>
+        <image name="galeria_plecas_foto.png" width="640" height="64"/>
+        <image name="galeria_plecas_videos.png" width="640" height="64"/>
+        <image name="header.png" width="639" height="146"/>
+        <image name="header_logo.png" width="640" height="146"/>
+        <image name="home_btn.png" width="52" height="52"/>
+        <image name="home_btn_microfono.png" width="125" height="123"/>
+        <image name="home_btn_video.png" width="184" height="181"/>
+        <image name="home_texto_usatupawah.png" width="230" height="24"/>
+        <image name="linea_cafe.png" width="640" height="2"/>
+        <image name="menu_inferior.png" width="640" height="116"/>
+        <image name="menuinferior_comousarpawah_btn.png" width="190" height="87"/>
+        <image name="menuinferior_galeria_btn.png" width="85" height="87"/>
+        <image name="menuinferior_misderechos_btn.png" width="144" height="87"/>
+        <image name="menulateral_icono_ajustes.png" width="46" height="44"/>
+        <image name="modocamara_btn_foto_verde.png" width="163" height="162"/>
+        <image name="modofake_btn_07.png" width="101" height="99"/>
+        <image name="modovideo_btn_grabar_on.png" width="160" height="160"/>
+        <image name="modovideo_btn_stop.png" width="163" height="162"/>
+        <image name="modovideo_plecas_inferior.png" width="640" height="273"/>
+        <image name="modovideo_plecas_superior.png" width="639" height="78"/>
+        <image name="plecagris.png" width="640" height="115"/>
+        <image name="reviewdelelemento_btn_play.png" width="125" height="124"/>
+        <image name="terminosdeuso_btn_acepto.png" width="162" height="50"/>
+        <image name="terminosdeuso_btn_noacepto.png" width="162" height="50"/>
+        <image name="terminosdeuso_img_signo.png" width="162" height="160"/>
+    </resources>
 </document>
